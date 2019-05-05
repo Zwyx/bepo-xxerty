@@ -1,0 +1,159 @@
+// Bépo Over Azerty
+// Based on French Azerty and Bépo (1.0rc2 version) for a pc105 keyboard (french)
+//
+// Azerty when Caps Lock is OFF ; Bépo when Caps Lock is ON
+//
+// The keyboard shortcuts (Ctrl+C, etc.) remain at their physical positions.
+//
+partial alphanumeric_keys
+xkb_symbols "bepo-azerty" {
+
+    include "level3(ralt_switch)"
+    include "keypad(oss)"
+
+    name[Group1]= "French (Bepo-Azerty, ergonomic, Dvorak way, Active on Caps Lock)";
+
+    key.type[group1]="BEPO_XXERTY";
+
+    // First row
+    key <TLDE> { [twosuperior, asciitilde,     notsign,      notsign,          dollar,   numbersign,         endash,      paragraph ] };
+    key <AE01> { [  ampersand,         1,  onesuperior,   exclamdown,        quotedbl,            1,         emdash, doublelowquotemark ] };
+    key <AE02> { [     eacute,         2,   asciitilde,    oneeighth,   guillemotleft,            2,           less,  leftdoublequotemark ] };
+    key <AE03> { [   quotedbl,         3,   numbersign,     sterling,  guillemotright,            3,        greater, rightdoublequotemark ] };
+    key <AE04> { [ apostrophe,         4,    braceleft,       dollar,       parenleft,            4,    bracketleft,      lessthanequal ] };
+    key <AE05> { [  parenleft,         5,  bracketleft, threeeighths,      parenright,            5,   bracketright,   greaterthanequal ] };
+    key <AE06> { [      minus,         6,          bar,  fiveeighths,              at,            6,    asciicircum                 ] };
+    key <AE07> { [     egrave,         7,        grave, seveneighths,            plus,            7,      plusminus,        notsign ] };
+    key <AE08> { [ underscore,         8,    backslash,    trademark,           minus,            8,          U2212,     onequarter ] };
+    key <AE09> { [   ccedilla,         9,  asciicircum,    plusminus,           slash,            9,       division,        onehalf ] };
+    key <AE10> { [     agrave,         0,           at,       degree,        asterisk,            0,       multiply,  threequarters ] };
+    key <AE11> { [ parenright,    degree, bracketright, questiondown,           equal,       degree,       notequal,        minutes ] };
+    key <AE12> { [      equal,      plus,   braceright,  dead_ogonek,         percent,        grave,          U2030,        seconds ] };
+
+    // Second row
+    key <AD01> { [         a,          A,           ae,           AE,               b,            B,            bar,      brokenbar ] };
+    key <AD02> { [         z,          Z, guillemotleft,        less,          eacute,       Eacute,     dead_acute, dead_doubleacute ] };
+    key <AD03> { [         e,          E,     EuroSign,         cent,               p,            P,      ampersand,        section ] };
+    key <AD04> { [         r,          R,    paragraph,   registered,               o,            O,             oe,             OE ] };
+    key <AD05> { [         t,          T,       tslash,       Tslash,          egrave,       Egrave,     dead_grave,          grave ] };
+    key <AD06> { [         y,          Y,    leftarrow,          yen, dead_circumflex,       exclam,     exclamdown                 ] };
+    key <AD07> { [         u,          U,    downarrow,      uparrow,               v,            V,     dead_caron                 ] };
+    key <AD08> { [         i,          I,   rightarrow,     idotless,               d,            D,            eth,            ETH ] };
+    key <AD09> { [         o,          O,       oslash,     Ooblique,               l,            L,    dead_stroke                 ] };
+    key <AD10> { [         p,          P,        thorn,        THORN,               j,            J,          U0133,          U0132 ] };
+    key <AD11> { [dead_circumflex, dead_diaeresis, dead_diaeresis, dead_abovering,  z,            Z,          schwa,          SCHWA ] };
+    key <AD12> { [    dollar,   sterling,     currency,  dead_macron,               w,            W,     dead_breve                 ] };
+
+    // Third row
+    key <AC01> { [         q,          Q,           at,  Greek_OMEGA,               a,            A,             ae,             AE ] };
+    key <AC02> { [         s,          S,       ssharp,      section,               u,            U,         ugrave,         Ugrave ] };
+    key <AC03> { [         d,          D,          eth,          ETH,               i,            I, dead_diaeresis,  dead_abovedot ] };
+    key <AC04> { [         f,          F,      dstroke,  ordfeminine,               e,            E,       EuroSign,  dead_currency ] };
+    key <AC05> { [         g,          G,          eng,          ENG,           comma,    semicolon, rightsinglequotemark, dead_horn ] };
+    key <AC06> { [         h,          H,      hstroke,      Hstroke,               c,            C,      copyright,          U017F ] };
+    key <AC07> { [         j,          J,    dead_hook,    dead_horn,               t,            T,          thorn,          THORN ] };
+    key <AC08> { [         k,          K,          kra,    ampersand,               s,            S,         ssharp,          U1E9E ] };
+    key <AC09> { [         l,          L,      lstroke,      Lstroke,               r,            R,     registered,      trademark ] };
+    key <AC10> { [         m,          M,           mu,    masculine,               n,            N,     dead_tilde                 ] };
+    key <AC11> { [    ugrave,    percent, dead_circumflex, dead_caron,              m,            M,    dead_macron,      masculine ] };
+    key <BKSL> { [  asterisk,         mu,   dead_grave,   dead_breve,        ccedilla,     Ccedilla,   dead_cedilla, dead_belowcomma ] };
+
+    // Fourth row
+    key <LSGT> { [      less,    greater, lessthanequal, greaterthanequal, ecircumflex, Ecircumflex,         slash                 ] };
+    key <AB01> { [         w,          W,      lstroke,      Lstroke,         agrave,       Agrave,      backslash                 ] };
+    key <AB02> { [         x,          X, guillemotright,    greater,              y,            Y,      braceleft, leftsinglequotemark  ] };
+    key <AB03> { [         c,          C,         cent,    copyright,              x,            X,     braceright, rightsinglequotemark ] };
+    key <AB04> { [         v,          V, leftdoublequotemark, leftsinglequotemark, period,  colon,       ellipsis, periodcentered ] };
+    key <AB05> { [         b,          B, rightdoublequotemark, rightsinglequotemark, k,         K,     asciitilde                 ] };
+    key <AB06> { [         n,          N,            n,            N,     apostrophe,     question,   questiondown,      dead_hook ] };
+    key <AB07> { [     comma,   question,   dead_acute, dead_doubleacute,          q,            Q, dead_abovering,  dead_belowdot ] };
+    key <AB08> { [ semicolon,     period, horizconnector,   multiply,              g,            G,     dead_greek                 ] };
+    key <AB09> { [     colon,      slash, periodcentered,   division,              h,            H,         dagger,   doubledagger ] };
+    key <AB10> { [    exclam,    section, dead_belowdot, dead_abovedot,            f,            F,    dead_ogonek,    ordfeminine ] };
+
+    key <SPCE> { [     space,      space, nobreakspace, nobreakspace,          space, nobreakspace,     underscore,          U202F ] };
+};
+
+// Bépo Over Qwerty
+// Based on US Qwerty and Bépo (1.0rc2 version) for a pc105 keyboard (french)
+//
+// Qwerty when Caps Lock is OFF ; Bépo when Caps Lock is ON
+//
+// The keyboard shortcuts (Ctrl+C, etc.) remain at their physical positions.
+//
+partial alphanumeric_keys
+xkb_symbols "bepo-qwerty" {
+
+    include "level3(ralt_switch)"
+    include "keypad(oss)"
+
+    name[Group1]= "French (Bepo-Qwerty, ergonomic, Dvorak way, Active on Caps Lock)";
+
+    key.type[group1]="BEPO_XXERTY";
+
+    // First row
+    key <TLDE> { [     grave, asciitilde,         none,         none,          dollar,   numbersign,         endash,      paragraph ] };
+    key <AE01> { [         1,     exclam,         none,         none,        quotedbl,            1,         emdash, doublelowquotemark ] };
+    key <AE02> { [         2,         at,         none,         none,   guillemotleft,            2,           less,  leftdoublequotemark ] };
+    key <AE03> { [         3, numbersign,         none,         none,  guillemotright,            3,        greater, rightdoublequotemark ] };
+    key <AE04> { [         4,     dollar,         none,         none,       parenleft,            4,    bracketleft,      lessthanequal ] };
+    key <AE05> { [         5,    percent,         none,         none,      parenright,            5,   bracketright,   greaterthanequal ] };
+    key <AE06> { [         6, asciicircum,        none,         none,              at,            6,    asciicircum                 ] };
+    key <AE07> { [         7,  ampersand,         none,         none,            plus,            7,      plusminus,        notsign ] };
+    key <AE08> { [         8,   asterisk,         none,         none,           minus,            8,          U2212,     onequarter ] };
+    key <AE09> { [         9,  parenleft,         none,         none,           slash,            9,       division,        onehalf ] };
+    key <AE10> { [         0, parenright,         none,         none,        asterisk,            0,       multiply,  threequarters ] };
+    key <AE11> { [     minus, underscore,         none,         none,           equal,       degree,       notequal,        minutes ] };
+    key <AE12> { [     equal,       plus,         none,         none,         percent,        grave,          U2030,        seconds ] };
+
+    // Second row
+    key <AD01> { [         q,          Q,         none,         none,               b,            B,            bar,      brokenbar ] };
+    key <AD02> { [         w,          W,         none,         none,          eacute,       Eacute,     dead_acute, dead_doubleacute ] };
+    key <AD03> { [         e,          E,         none,         none,               p,            P,      ampersand,        section ] };
+    key <AD04> { [         r,          R,         none,         none,               o,            O,             oe,             OE ] };
+    key <AD05> { [         t,          T,         none,         none,          egrave,       Egrave,     dead_grave,          grave ] };
+    key <AD06> { [         y,          Y,         none,         none, dead_circumflex,       exclam,     exclamdown                 ] };
+    key <AD07> { [         u,          U,         none,         none,               v,            V,     dead_caron                 ] };
+    key <AD08> { [         i,          I,         none,         none,               d,            D,            eth,            ETH ] };
+    key <AD09> { [         o,          O,         none,         none,               l,            L,    dead_stroke                 ] };
+    key <AD10> { [         p,          P,         none,         none,               j,            J,          U0133,          U0132 ] };
+    key <AD11> { [ bracketleft, braceleft,        none,         none,               z,            Z,          schwa,          SCHWA ] };
+    key <AD12> { [ bracketright, braceright,      none,         none,               w,            W,     dead_breve                 ] };
+    key <BKSL> { [ backslash,        bar,         none,         none,        ccedilla,     Ccedilla,   dead_cedilla, dead_belowcomma ] };
+
+    // Third row
+    // Bug in XFCE terminal and Sublime Text: Caps_Lock+A = A instead of a. Because BÉPO's A is at the same position as Qwerty's A...
+    // key <AC01> { [         a,          A,         none,         none,               a,            A,             ae,             AE ] };
+    // key <AC02> { [         s,          S,         none,         none,               u,            U,         ugrave,         Ugrave ] };
+    // Choose your fix:
+    // ==> Fix 1: swap Qwerty's A with S
+    key <AC01> { [         s,          S,         none,         none,               a,            A,             ae,             AE ] };
+    key <AC02> { [         a,          A,         none,         none,               u,            U,         ugrave,         Ugrave ] };
+    // ==> Fix 2: swap BÉPO's A with U
+    // key <AC01> { [         a,          A,         none,         none,               u,            U,         ugrave,         Ugrave ] };
+    // key <AC02> { [         s,          S,         none,         none,               a,            A,             ae,             AE ] };
+    // Another solution is to swap Qwerty's Q, or any other character, with A; or just replace Qwerty's Q with anything if you never use Ctrl+Q
+    key <AC03> { [         d,          D,         none,         none,               i,            I, dead_diaeresis,  dead_abovedot ] };
+    key <AC04> { [         f,          F,         none,         none,               e,            E,       EuroSign,  dead_currency ] };
+    key <AC05> { [         g,          G,         none,         none,           comma,    semicolon, rightsinglequotemark, dead_horn ] };
+    key <AC06> { [         h,          H,         none,         none,               c,            C,      copyright,          U017F ] };
+    key <AC07> { [         j,          J,         none,         none,               t,            T,          thorn,          THORN ] };
+    key <AC08> { [         k,          K,         none,         none,               s,            S,         ssharp,          U1E9E ] };
+    key <AC09> { [         l,          L,         none,         none,               r,            R,     registered,      trademark ] };
+    key <AC10> { [ semicolon,      colon,         none,         none,               n,            N,     dead_tilde                 ] };
+    key <AC11> { [ apostrophe,  quotedbl,         none,         none,               m,            M,    dead_macron,      masculine ] };
+
+    // Fourth row
+    key <AB01> { [         z,          Z,         none,         none,          agrave,       Agrave,      backslash                 ] };
+    key <AB02> { [         x,          X,         none,         none,               y,            Y,      braceleft, leftsinglequotemark  ] };
+    key <AB03> { [         c,          C,         none,         none,               x,            X,     braceright, rightsinglequotemark ] };
+    key <AB04> { [         v,          V,         none,         none,          period,        colon,       ellipsis, periodcentered ] };
+    key <AB05> { [         b,          B,         none,         none,               k,            K,     asciitilde                 ] };
+    key <AB06> { [         n,          N,         none,         none,      apostrophe,     question,   questiondown,      dead_hook ] };
+    key <AB07> { [         m,          M,         none,         none,               q,            Q, dead_abovering,  dead_belowdot ] };
+    key <AB08> { [     comma,       less,         none,         none,               g,            G,     dead_greek                 ] };
+    key <AB09> { [    period,    greater,         none,         none,               h,            H,         dagger,   doubledagger ] };
+    key <AB10> { [     slash,   question,         none,         none,               f,            F,    dead_ogonek,    ordfeminine ] };
+
+    key <SPCE> { [     space,      space,         none,         none,           space, nobreakspace,     underscore,          U202F ] };
+};

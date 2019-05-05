@@ -1,0 +1,30 @@
+// Thanks to https://github.com/ZeptByteS/dvorak-qwerty
+
+partial default xkb_types "default" {
+    virtual_modifiers Meta,LevelThree,Alt,Super;
+
+    type "BEPO_XXERTY" {
+        modifiers = None+Shift+Lock+Control+Alt+Super+LevelThree;
+
+        map[None] = level1;
+        map[Shift] = level2;
+        map[Shift+Control] = Level2;
+        map[Shift+Alt] = Level2;
+        map[Shift+Super] = Level2;
+        map[LevelThree] = level3;
+        map[LevelThree+Shift] = level4;
+        map[Lock] = level5;
+        map[Shift+Lock] = level6;
+        map[LevelThree+Lock] = level7;
+        map[LevelThree+Shift+Lock] = level8;
+
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+        level_name[Level3]= "LevelThree";
+        level_name[Level4]= "LevelThree+Shift";
+        level_name[Level5]= "CapsLock";
+        level_name[Level6]= "CapsLock+Shift";
+        level_name[Level5]= "CapsLock+LevelThree";
+        level_name[Level6]= "CapsLock+LevelThree+Shift";
+    };
+};
