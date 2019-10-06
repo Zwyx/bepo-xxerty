@@ -2,7 +2,7 @@
 
 Use Bépo on Linux while keeping Azerty or Qwerty shortcuts
 
-*As Bépo is mainly used by French people, the rest of this file is written in french.*
+*As Bépo is mainly used by French people, the rest of this file is written in French.*
 
 
 ## Présentation
