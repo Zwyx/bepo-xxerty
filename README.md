@@ -150,3 +150,4 @@ La solution fournit dans le fichier `<bepo-xxerty>/src/symbols/to-be-added-in-fr
 ## Personnaliser ses raccourcis clavier
 
 Vous l'aurez compris en lisant le paragraphe précédant, Bépo-Xxerty vous donne la possibilité de personnaliser facilement vos raccourcis clavier sans modifier la disposition utilisée pour taper.
+
