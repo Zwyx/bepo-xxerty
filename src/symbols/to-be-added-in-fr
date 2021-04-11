@@ -5,6 +5,8 @@
 //
 // The keyboard shortcuts (Ctrl+C, etc.) remain at their physical positions.
 //
+// By Zwyx – https://github.com/Zwyx
+//
 partial alphanumeric_keys
 xkb_symbols "bepo-azerty" {
 
@@ -80,6 +82,8 @@ xkb_symbols "bepo-azerty" {
 // Qwerty when Caps Lock is OFF ; Bépo when Caps Lock is ON
 //
 // The keyboard shortcuts (Ctrl+C, etc.) remain at their physical positions.
+//
+// By Zwyx – https://github.com/Zwyx
 //
 partial alphanumeric_keys
 xkb_symbols "bepo-qwerty" {
