@@ -1,9 +1,10 @@
 # Bépo-Xxerty
 
-Use Bépo on Linux while keeping Azerty or Qwerty shortcuts
+Use Bépo on Linux while keeping Azerty or Qwerty shortcuts.
+
+Note: see also [Bépo-Code](https://github.com/Zwyx/bepo-code) for a customised Bépo layout optimised for code, English, and French, with Azerty/Qwerty shortcuts.
 
 *As Bépo is mainly used by French people, the rest of this file is written in French.*
-
 
 ## Présentation
 
@@ -13,8 +14,7 @@ Les premiers niveaux de caractères de Bépo-Xxerty sont ceux d'Azerty/Qwerty, e
 
 Il est facile de désactiver l'indicateur lumineux de CapsLock pour ne pas qu'il soit toujours allumé pendant l'utilisation de Bépo.
 
-Bépo-Xxerty fonctionne sous Linux avec X ; aucun test n'a été effectué avec Wayland.
-
+Bépo-Xxerty fonctionne sous Linux avec X11 et Wayland.
 
 ## Mise en œuvre
 
@@ -125,11 +125,9 @@ en fonction de votre clavier physique.
 
 Si tout fonctionne correctement et que vous souhaitez rendre Bepo-Azerty/Bepo-Qwerty disponibles dès le démarrage de votre ordinateur, rendez-vous dans la configuration du clavier de votre distribution Linux pour l'ajouter à la liste des dispositions actives (la première de la liste est celle activée lors du démarrage de l'ordinateur).
 
-
 ## Utilisation
 
 Lorsque Bepo-Azerty/Bepo-Qwerty est active et que CapsLock est verrouillée, utilisez Bépo comme une disposition Bépo normale : Shift donne accès aux majuscules, AltGr au troisième niveau, et AltGr+Shift au quatrième.
-
 
 ## Particularité de Bépo-Qwerty
 
@@ -146,8 +144,6 @@ La solution est simple : déplacer le A de Qwerty ou le A de Bépo. Exemples :
 
 La solution fournit dans le fichier `<bepo-xxerty>/src/symbols/to-be-added-in-fr` est celle inversant le A et le S de Qwerty. Modifiez ce fichier si vous optez pour une autre solution.
 
-
 ## Personnaliser ses raccourcis clavier
 
 Vous l'aurez compris en lisant le paragraphe précédant, Bépo-Xxerty vous donne la possibilité de personnaliser facilement vos raccourcis clavier sans modifier la disposition utilisée pour taper.
-

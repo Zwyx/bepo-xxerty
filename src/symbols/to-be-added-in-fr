@@ -1,7 +1,7 @@
 // Bépo Over Azerty
 // Based on French Azerty and Bépo (1.0rc2 version) for a pc105 keyboard (french)
 //
-// Azerty when Caps Lock is OFF ; Bépo when Caps Lock is ON
+// Azerty when Caps Lock is OFF; Bépo when Caps Lock is ON
 //
 // The keyboard shortcuts (Ctrl+C, etc.) remain at their physical positions.
 //
@@ -79,7 +79,7 @@ xkb_symbols "bepo-azerty" {
 // Bépo Over Qwerty
 // Based on US Qwerty and Bépo (1.0rc2 version) for a pc105 keyboard (french)
 //
-// Qwerty when Caps Lock is OFF ; Bépo when Caps Lock is ON
+// Qwerty when Caps Lock is OFF; Bépo when Caps Lock is ON
 //
 // The keyboard shortcuts (Ctrl+C, etc.) remain at their physical positions.
 //
