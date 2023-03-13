@@ -140,7 +140,7 @@ La solution est simple : déplacer le A de Qwerty ou le A de Bépo. Exemples :
 - Inverser le A et le S de Qwerty.
 - Inverser le A et le U de Bépo.
 - Inverser le A de Qwerty avec n'importe quel autre caractère.
-- Si, les seules fois que vous avez utilisé Ctrl+Q, c'était par mégarde, et que cela vous a fermé l'application dans laquelle vous étiez en train de travailler ($#@?#@$!!), alors autant supprimer complètement le Q du Qwerty. Mettez à sa place un Y par exemple, vous donnant ainsi un accès facile à la fonction « Annuler l'annulation ». (Si vous inversez Q et Y, vous allez probablement faire Ctrl+Q en voulant faire Ctrl+Y par automatisme... autant retirer complètement le Q et avoir deux Y sur son clavier.)
+- Si, les seules fois que vous avez utilisé Ctrl+Q, c'était par mégarde, et que cela vous a fermé l'application dans laquelle vous étiez en train de travailler, alors autant supprimer complètement le Q du Qwerty. Mettez à sa place un Y par exemple, vous donnant ainsi un accès facile à la fonction « Annuler l'annulation ». (Si vous inversez Q et Y, vous allez probablement faire Ctrl+Q en voulant faire Ctrl+Y par automatisme... autant retirer complètement le Q et avoir deux Y sur son clavier.)
 
 La solution fournit dans le fichier `<bepo-xxerty>/src/symbols/to-be-added-in-fr` est celle inversant le A et le S de Qwerty. Modifiez ce fichier si vous optez pour une autre solution.
 
