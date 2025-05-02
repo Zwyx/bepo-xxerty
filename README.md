@@ -1,3 +1,10 @@
+> [!NOTE]
+> Since the creation of Bépo-Xxerty, [keyd](https://github.com/rvaiya/keyd) has appeared and provides better support as it remaps keys at system level. I now use it for [Bépo-Code](https://github.com/Zwyx/bepo-code).
+>
+> Depuis la création de Bépo-Xxerty, [keyd](https://github.com/rvaiya/keyd) est apparu et procure un meilleur support car il agit au niveau système. Je l'utilise maintenant pour [Bépo-Code](https://github.com/Zwyx/bepo-code).
+
+---
+
 # Bépo-Xxerty
 
 Use Bépo on Linux while keeping Azerty or Qwerty shortcuts.
@@ -14,9 +21,14 @@ Les premiers niveaux de caractères de Bépo-Xxerty sont ceux d'Azerty/Qwerty, e
 
 Il est facile de désactiver l'indicateur lumineux de CapsLock pour ne pas qu'il soit toujours allumé pendant l'utilisation de Bépo.
 
-Bépo-Xxerty fonctionne sous Linux avec X11 et Wayland.
+Bépo-Xxerty fonctionne sous Linux avec X11 ou Wayland.
 
 ## Mise en œuvre
+
+> [!WARNING]
+> Si les fichiers de configuration sont invalid, votre ordinateur risque de ne pas pouvoir démarrer. Toutefois, pas de panique si cela arrive, vous devriez pouvoir redémarrer en mode _recovery_, et lancer un terminal root afin de réparer votre configuration.
+>
+> **Assurez-vous de sauvegarder votre configuration avant d'y apporter des modifications.**
 
 Les fichiers de configuration du clavier se trouvent dans `/usr/share/X11/xkb/`. Ces fichiers étant susceptibles de changer d'une distribution à l'autre, ce repository ne procure pas ces fichiers complets ; seules les modifications à effectuer sont présentes.
 
